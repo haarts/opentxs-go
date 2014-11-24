@@ -153,7 +153,7 @@ func getPayload(in []string) ([]string, []string, error) {
 
 func getSignatures(in []string) ([]string, error) {
 	if !isCorrectBeginSectionSeperator(in[0]) {
-		return []string{}, []string{}, errors.New("Expected a list of signatures")
+		return []string{}, errors.New("Expected a list of signatures")
 	}
 
 	var signatures []string
